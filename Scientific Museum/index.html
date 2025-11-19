@@ -1,0 +1,202 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scientific Museum — Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Top utility bar (login/register) -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="top-left">Community · Science museum</div>
+      <div class="top-right">
+        <a href="#login" class="link small">Login</a>
+        <a href="#register" class="btn small ghost">Register</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Scientific Museum logo" class="logo">
+        <div class="brand-text">
+          <h1 class="site-title">Scientific Museum</h1>
+          <p class="tag">Exploring science for everyone</p>
+        </div>
+      </div>
+
+      <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#programs">Museum Programs</a></li>
+          <li><a href="#exhibits">Exhibitions</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#visit">Visit Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-cta">
+        <a class="btn primary" href="#tickets">Buy Tickets</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO SECTION with decorative shapes -->
+    <section class="hero" id="home" aria-label="Hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h2>Where curiosity becomes discovery</h2>
+          <p>Interactive exhibits, live demonstrations, and hands-on learning for visitors of all ages. Explore our latest planetarium shows and family events.</p>
+          <div class="hero-buttons">
+            <a class="btn primary" href="#exhibits">Explore Exhibits</a>
+            <a class="btn ghost" href="#visit">Plan Your Visit</a>
+          </div>
+        </div>
+
+        <!-- INSERTED IMAGE #1 -->
+        <div class="hero-image" aria-hidden="true">
+          <img src="assets/homeimagetop.jpg" alt="Home top image">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SHAPED HIGHLIGHTS -->
+    <section class="highlights container" aria-label="Highlights">
+      <article class="card">
+        <img src="assets/icon1.png" alt="Planetarium icon">
+        <h3>Planetarium</h3>
+        <p>Daily shows that transport you across the stars.</p>
+      </article>
+      <article class="card">
+        <img src="assets/icon2.png" alt="Hands-on labs icon">
+        <h3>Hands-on Labs</h3>
+        <p>Experiment with real scientific equipment.</p>
+      </article>
+      <article class="card">
+        <img src="assets/icon3.png" alt="Events icon">
+        <h3>Events & Talks</h3>
+        <p>Lectures, workshops and family nights throughout the year.</p>
+      </article>
+    </section>
+
+    <!-- EXHIBITS -->
+    <section id="exhibits" class="exhibits container" aria-label="Featured exhibits">
+      <h2 class="section-title">Featured Exhibits</h2>
+      <div class="exhibit-grid">
+
+        <article class="exhibit">
+          <img src="assets/exhibit1.jpg" alt="Robotics Lab exhibit">
+          <div class="exhibit-body">
+            <h4>Robotics Lab</h4>
+            <p>See autonomous robots solve challenges and learn how they're built.</p>
+          </div>
+        </article>
+
+        <article class="exhibit">
+          <img src="assets/exhibit2.jpg" alt="Deep Sea exhibit">
+          <div class="exhibit-body">
+            <h4>Deep Sea: The Unknown</h4>
+            <p>Discover mysterious animals and exploration technology used in deep ocean research.</p>
+          </div>
+        </article>
+
+        <article class="exhibit">
+          <img src="assets/exhibit3.jpg" alt="Human Biology exhibit">
+          <div class="exhibit-body">
+            <h4>Human Biology</h4>
+            <p>Interactive displays on the human body and medical breakthroughs.</p>
+          </div>
+        </article>
+
+        <article class="exhibit">
+          <img src="assets/kid-touches-robot.jpg" alt="Kid touches robot">
+          <div class="exhibit-body">
+            <h4>Future Innovators</h4>
+            <p>A hands-on experience where children explore robotics and creativity.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta container" id="visit" aria-label="Plan your visit">
+      <div class="cta-inner">
+        <div>
+          <h2>Plan your visit</h2>
+          <p>Open daily from 9:00 — 17:00. Members get free entry and discounts on events.</p>
+        </div>
+        <a class="btn primary" href="#tickets">Get Tickets</a>
+      </div>
+    </section>
+
+    <!-- Newsletter / Signup (now shows "university email" hint like teacher) -->
+    <section class="newsletter container" aria-label="Newsletter signup">
+      <div class="newsletter-inner">
+        <h3>Stay in the loop</h3>
+        <p>Sign up for our newsletter for the latest exhibits and events.</p>
+        <form action="#" class="newsletter-form" aria-label="Subscribe to newsletter">
+          <input type="email" placeholder="Your university email (e.g. name@university.edu)" required>
+          <button class="btn primary" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact / Find us -->
+    <section id="contact" class="contact container" aria-label="Contact and find us">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Find us</h3>
+          <p><strong>Scientific Museum</strong><br>123 Science Way, Kampala<br>Tel. +256757886712</p>
+          <p><a href="#visit" class="link">Opening hours</a> · <a href="#tickets" class="link">Buy tickets</a></p>
+
+          <h4>Payment options</h4>
+          <div class="payments">
+            <img src="assets/visa.png" alt="Visa" class="pay-icon">
+            <img src="assets/mastercard.png" alt="Mastercard" class="pay-icon">
+            <img src="assets/paypal.png" alt="PayPal" class="pay-icon">
+          </div>
+        </div>
+
+        <div class="contact-map">
+          <img src="assets/map.jpg" alt="Map showing museum location">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="foot-left">
+        <img src="assets/logo.png" alt="Scientific Museum logo" class="logo small">
+        <p>Scientific Museum — Inspiring curiosity since 1998</p>
+      </div>
+      <div class="foot-right">
+        <ul>
+          <li><a href="#learn">Education</a></li>
+          <li><a href="#support">Donate</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <p class="copyright">&copy; <span id="year"></span> Scientific Museum</p>
+        <p class="designer">Designed by Muwanguzi Moses</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = (new Date()).getFullYear();
+  </script>
+</body>
+</html>
